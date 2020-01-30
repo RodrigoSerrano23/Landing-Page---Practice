@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font: 1.2rem;
+    line-height: 1.6em;
+    margin:0;
+}
+
+.header{
+    background: steelblue;
+    color: white;
+    padding: 2rem;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color:white;
+    text-decoration: none;
+}
+.welcome-nav-cotainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.welcome{
+    letter-spacing: 8px;
+    font-size: 1.8em;
+}
+
+.menu-icon{
+    display:none ;
+}
+
+.slider-1{
+    background: aquamarine;
+    text-align: center;
+    height: 100vh;
+    padding-top: 12rem;
+    font-style: italic;
+}
+
+.slider-1 h1{
+    font: bold;
+    font-size: 50px;
+}
+
+.slider-1 h3{
+    font: bold;
+    font-size: 15px;
+}
+
+img{
+    width: 230px;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    border-radius: 8px;
+}
+
+.navigation ul li a:hover{
+    background: #333;
+}
+
+.footer{
+    background: #f2f2f2;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 767px){
+
+    .menu-icon{
+        display:block ;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .navigation ul.show{
+        display: block;
+    }
+
+    .navigation ul li{
+        display: block;
+    }
+    
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s linear;
+        border-radius: 8px;
+    }
+    
+    .navigation ul li a:hover{
+        background: #333;
+    }
+}
