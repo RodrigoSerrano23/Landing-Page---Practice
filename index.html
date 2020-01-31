@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing page - Practice</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="public/css/page.css">
 
 </head>
@@ -45,65 +45,65 @@
     <!-- bread section -->
     <section id="bread-section" class="container">
         <div class="container">
-            <div>
+            <div class="bread-title-box">
                 <h2 class="title text-center">menu</h1>
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                    <div class="bread-item mx-auto" >
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100" onclick="showTopic(1)">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Bakery</h3>
                             </div>
                         </div>
                         <img src="public/img/bakery.jpg" class="img-fluid bread-img">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                <div class="col-sm-12 col-md-6 col-lg-4" onclick="showTopic(2)">
+                    <div class="bread-item mx-auto" >
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Donuts</h3>
                             </div>
                         </div>
                         <img src="public/img/donuts.jpg" class="img-fluid bread-img">
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                <div class="col-sm-12 col-md-6 col-lg-4" onclick="showTopic(3)">
+                    <div class="bread-item mx-auto" >
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Muffins</h3>
                             </div>
                         </div>
-                        <img src="public/img/cookies.jpg" class="img-fluid bread-img">
+                        <img src="public/img/muffin.jpg" class="img-fluid bread-img">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                    <div class="bread-item mx-auto" onclick="showTopic(4)">
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Croissants</h3>
                             </div>
                         </div>
                         <img src="public/img/croissant.jpg" class="img-fluid bread-img">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                    <div class="bread-item mx-auto" onclick="showTopic(5)">
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Macarons</h3>
                             </div>
                         </div>
                         <img src="public/img/macarons.jpg" class="img-fluid bread-img">
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="bread-item mx-auto">
-                        <div class="bread-item-box">
+                    <div class="bread-item mx-auto" onclick="showTopic(6)">
+                        <div class="bread-item-box d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="text-center color-white">
-                                <i class="fas fa-plus fa-3x"></i>
+                                <h3>Pies</h3>
                             </div>
                         </div>
                         <img src="public/img/pie.jpg" class="img-fluid bread-img">
@@ -112,6 +112,42 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal window -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="topicModal">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="closeButton1">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                    <!-- <div class="modal-header">
+                        <h5 class="modal-title">Panaderia UV</h5>
+                    </div> -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div>
+                            <div class="mb-5">
+                                <h2 class="smallLabel" id="topicLabel"></p>
+                            </div>
+                            <div class="mb-5">
+                                <img src="public/img/bakery.jpg" class="img-fluid" id="topicImage">
+                            </div>
+                            <div class="mb-5">
+                                <p id="topicText"></p>
+                            </div>
+                            <div class="closeButton2">
+                                <button type="button" class="btn btn-dark btn-lg " data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- bread section / end -->
 
     <footer class="footer">
@@ -120,9 +156,15 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="public/js/script.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+    <!--bootstrap, jquery and popper-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <!--local js files-->
+    <script src="public/js/script.js"></script>
+    <script src="public/js/content.js"></script>
 </body>
 
 </html>
