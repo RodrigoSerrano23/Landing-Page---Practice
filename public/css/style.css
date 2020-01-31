@@ -286,6 +286,9 @@ footer{
 	margin-bottom: 5px;
 }
  
+.footer-down{
+	text-align: center;
+}
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
  
