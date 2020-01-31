@@ -122,3 +122,53 @@ img{
         background: #333;
     }
 }
+
+/*Section Bread*/
+
+#bread-section {
+    padding: 6rem 0;
+}
+#bread-section .title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+#bread-section div.row {
+    text-align: center;
+}
+#bread-section .bread-item {
+    position: relative;
+    display: block;
+    /*max-width: 25rem;*/
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 2rem;
+    overflow: hidden;
+    background: black !important;
+}
+#bread-section .bread-item .bread-item-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-out;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.91);
+}
+#bread-section .bread-item .bread-item-box:hover {
+    opacity: 1;
+}
+
+#bread-section .bread-img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.color-white{
+    color: white !important;
+}
+.text-center {
+    text-align: center!important;
+}
+
