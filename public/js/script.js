@@ -18,6 +18,30 @@ jQuery('document').ready(function($){
         });
 });
 
+(function() {
+	'use strict';
+	window.addEventListener('load', function() {
+	  var forms = document.getElementsByClassName('needs-validation');
+	  var validation = Array.prototype.filter.call(forms, function(form) {
+		form.addEventListener('submit', function(event) {
+		  if (form.checkValidity() === false) {
+			event.preventDefault();
+			event.stopPropagation();   
+		  }else 
+		  {
+			 let name = document.getElementById('name').value;
+			 let emailAdress = document.getElementById('emailAdress').value;
+			 let phoneNumber = document.getElementById('phoneNumber').value;
+			 let message = document.getElementById('message').value;
+			 alert("Datos:"+name+","+emailAdress+","+phoneNumber+","+message);
+		  }
+		  form.classList.add('was-validated');
+		}, false);
+	  });
+	}, false);
+  })();
+
+/* BREAD SECTION */
 function showTopic(e){
 	switch(e){
 		case 1:

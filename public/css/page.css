@@ -6,8 +6,23 @@ body{
     margin:0;
 }
 
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+p{
+    margin: 1.6em;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin:0 auto;
+}
+
 .header{
-    background: steelblue;
+    background: #333;
     color: white;
     padding: 2rem;
 
@@ -38,7 +53,7 @@ body{
 }
 
 .slider-1{
-    background: aquamarine;
+    background: #ECE7E7;
     text-align: center;
     height: 100vh;
     padding-top: 12rem;
@@ -48,16 +63,25 @@ body{
 .slider-1 h1{
     font: bold;
     font-size: 50px;
+    margin: 0;
 }
 
 .slider-1 h3{
-    font: bold;
-    font-size: 15px;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    text-align: center;
 }
 
 img{
-    width: 230px;
+    margin: 0;
+    width: 300px;
 }
+
+.container-img img{
+    width: 200px;
+    margin: 0;
+}
+
 .navigation ul{
     margin: 0;
     padding: 0;
@@ -79,12 +103,116 @@ img{
     background: #333;
 }
 
-.footer{
-    background: #f2f2f2;
-    padding: 1rem 0;
-    text-align: center;
+.about{
+    background-color: #ECE7E7;
+    color: black;
+    height: 100vh;
 }
 
+.about-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5em;
+    margin: 0.75em;
+}
+
+.about-data{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+}
+
+.about-datam{
+    flex-direction: column;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.about-button{
+    flex-direction: column;
+    margin: 2.5em;
+}
+
+.button{
+    background-color: rgb(65, 65, 65);
+    border-color: rgb(65, 65, 65);
+    color: #ECE7E7;
+    font-size: 1.15em;
+    width: 220px;
+    height: 55px;
+}
+
+.button:hover{
+    background-color: #ECE7E7;
+    border-color: rgb(65, 65, 65);
+    color: rgb(65, 65, 65);
+}
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1{
+    max-width: 400px;
+}
+
+.column1 h1{
+    font-size: 22px;
+}
+
+.column1 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+
+.column2{
+    max-width: 400px;
+}
+
+.column2 h1{
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #c7c7c7;
+    font-size: 15px;
+}
+
+.column3{
+    max-width: 400px;
+}
+
+.column3 h1{
+    font-size: 22px;
+}
+
+.column3 p{
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+
+.container-footer{
+    background: #c2c2c2;
+    text-align: center;
+}
 
 @media only screen and (max-width: 767px){
 
@@ -125,7 +253,7 @@ img{
 
 /*Section Bread*/
 
-#bread-section {
+#bread-section, #contact-section, #about-section {
     padding: 6rem 0;
 }
 
@@ -161,7 +289,7 @@ img{
 
 #bread-section .bread-img {
     width: 100%;
-    max-height: 100%;
+    height: 100% !important;
     object-fit: cover;
 }
 
@@ -203,4 +331,75 @@ div.modal-body img {
     max-height: 100%;
     object-fit: cover;
 }
+
+/* section banner*/
+.slider-1{
+    background: #ECE7E7;
+    text-align: center;
+    height: 70vh;
+    padding-top: 12rem;
+    font-style: italic;
+}
+
+.slider-1 h1{
+    font: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.slider-1 h3{
+    font: normal 26px 'Cookie', cursive;
+    margin: 0;
+}
+
+img{
+    width: 200px;  
+}
+
+/*section about*/
+.about{
+    background-color: #ECE7E7;
+    color: rgb(65, 65, 65);
+    height: 100vh;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5em;
+    margin: 0.75em;
+}
+
+
+.about-data{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+
+.about-datam{
+    font-size: 1.10em;
+    padding: 1em;
+}
+
+.about-button{
+    flex-direction: column;
+    margin: 1em;
+}
+
+.button{
+    background-color: rgb(65, 65, 65);
+    border-color: rgb(65, 65, 65);
+    color: #ECE7E7;
+    font-size: 1.15em;
+    width: 220px;
+    height: 55px;
+}
+
+.button:hover{
+    background-color: #ECE7E7;
+    border-color: rgb(65, 65, 65);
+    color: rgb(65, 65, 65);
+}
+
 
