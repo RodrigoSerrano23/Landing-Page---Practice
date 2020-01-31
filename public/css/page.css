@@ -53,7 +53,7 @@ p{
 }
 
 .slider-1{
-    background: aquamarine;
+    background: #ECE7E7;
     text-align: center;
     height: 100vh;
     padding-top: 12rem;
@@ -69,6 +69,7 @@ p{
 .slider-1 h3{
     font: normal 36px 'Cookie', cursive;
     margin: 0;
+    text-align: center;
 }
 
 img{
@@ -202,6 +203,14 @@ footer{
     
     .navigation ul li a:hover{
         background: #333;
+    }
+
+    .slider-1{
+        background: #ECE7E7;
+        text-align: center;
+        height: 70vh;
+        padding-top: 12rem;
+        font-style: italic;
     }
 
     .slider-1 h1{
