@@ -2,6 +2,7 @@ jQuery('document').ready(function($){
 
     var menuBtn= $('.menu-icon'),
         menu = $('.navigation ul');
+        
     
         menuBtn.click(function(){
 
@@ -12,4 +13,8 @@ jQuery('document').ready(function($){
             }
             
         });
+
+        window.onscroll = function() {scrollFunction()};
+
+            
 });
