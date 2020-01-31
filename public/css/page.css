@@ -192,10 +192,14 @@ div.closeButton2 button span{
 div.modal-body {
     text-align: center;
 }
+.modal-body .container {
+    margin: auto;
+    max-width: 70%;
+}
 
 div.modal-body img {
     border-radius: .7rem !important;
-    width: 50%;
+    width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
