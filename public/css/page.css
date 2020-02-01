@@ -1,5 +1,4 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font: 1.2rem;
     line-height: 1.6em;
@@ -106,8 +105,6 @@ p{
 .about-text{
     display: flex;
     flex-direction: column;
-    font-size: 3.5em;
-    margin: 0.75em;
 }
 
 .about-data{
@@ -137,9 +134,21 @@ p{
 }
 
 .button:hover{
-    background-color: #ECE7E7;
+    background-color: #d2a937;
+    border-color: #e0ac1c;
+    color: #fff
+}
+
+.contact-button{
+    background-color: rgb(65, 65, 65);
     border-color: rgb(65, 65, 65);
-    color: rgb(65, 65, 65);
+    color: #ECE7E7;
+}
+
+.contact-button:hover{
+    background-color: #d2a937;
+    border-color: #e0ac1c;
+    color: #fff
 }
 
 footer{
@@ -266,6 +275,48 @@ footer{
     .container-section1 img{
         width: 150px;  
     }
+.about{
+        background-color: #ECE7E7;
+        color: rgb(65, 65, 65);
+        height: 100vh;
+    }
+    
+    .about-text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .about-data{
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+    }
+    
+    .about-datam{
+        font-size: 1.10em;
+        padding: 1em;
+    }
+    
+    .about-button{
+        flex-direction: column;
+        margin: 1em;
+    }
+    
+    .button{
+        background-color: rgb(65, 65, 65);
+        border-color: rgb(65, 65, 65);
+        color: #ECE7E7;
+        font-size: 1.15em;
+        width: 220px;
+        height: 55px;
+    }
+    
+    .button:hover{
+        background-color: #d2a937;
+        border-color: #e0ac1c;
+        color: #fff
+    }
 }
 
 /*Section Bread*/
@@ -274,12 +325,9 @@ footer{
     padding: 6rem 0;
 }
 
+
 #bread-section .bread-title-box{
     margin: 0 0 50px;
-}
-#bread-section .title {
-    font-size: 3rem;
-    line-height: 2.5rem;
 }
 
 #bread-section .bread-item {
@@ -298,6 +346,10 @@ footer{
     transition: all .2s ease-out;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.91);
+}
+
+#bread-section .bread-item .bread-item-box h3, .modal-body h2{
+    font-family: 'Cookie';
 }
 
 #bread-section .bread-item .bread-item-box:hover {
@@ -325,7 +377,11 @@ div.closeButton1 button {
     font-size: xx-large;
 }
 
-div.closeButton2 button:hover, div.closeButton2 button:visited {
+div.closeButton2 button{
+    font-family: 'Cookie';
+}
+
+div.closeButton2 button:hover, div.closeButton2 button:visited, div.closeButton2 button:active {
     color: #fff;
     background-color: #d2a937;
     border-color: #e0ac1c;
@@ -349,51 +405,32 @@ div.modal-body img {
     object-fit: cover;
 }
 
+div.modal-body .modal-title {
+    font-family: 'Cookie';
+}
+
+/* section banner*/
+.slider-1{
+    background: #ECE7E7;
+    text-align: center;
+    height: 70vh;
+    padding-top: 12rem;
+    font-style: italic;
+}
+
+.slider-1 h1{
+    font: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.slider-1 h3{
+    font: normal 26px 'Cookie', cursive;
+    margin: 0;
+}
+
+img{
+    width: 200px;  
+}
 
 /*section about*/
-.about{
-    background-color: #ECE7E7;
-    color: rgb(65, 65, 65);
-    height: 100vh;
-}
-
-.about-text{
-    display: flex;
-    flex-direction: column;
-    font-size: 3.5em;
-    margin: 0.75em;
-}
-
-
-.about-data{
-    display: flex;
-    flex-direction: column;
-    max-width: 550px;
-}
-
-.about-datam{
-    font-size: 1.10em;
-    padding: 1em;
-}
-
-.about-button{
-    flex-direction: column;
-    margin: 1em;
-}
-
-.button{
-    background-color: rgb(65, 65, 65);
-    border-color: rgb(65, 65, 65);
-    color: #ECE7E7;
-    font-size: 1.15em;
-    width: 220px;
-    height: 55px;
-}
-
-.button:hover{
-    background-color: #ECE7E7;
-    border-color: rgb(65, 65, 65);
-    color: rgb(65, 65, 65);
-}
-
-
