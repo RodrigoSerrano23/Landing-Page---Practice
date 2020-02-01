@@ -1,5 +1,4 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font: 1.2rem;
     line-height: 1.6em;
@@ -112,8 +111,6 @@ img{
 .about-text{
     display: flex;
     flex-direction: column;
-    font-size: 3.5em;
-    margin: 0.75em;
 }
 
 .about-data{
@@ -143,9 +140,21 @@ img{
 }
 
 .button:hover{
-    background-color: #ECE7E7;
+    background-color: #d2a937;
+    border-color: #e0ac1c;
+    color: #fff
+}
+
+.contact-button{
+    background-color: rgb(65, 65, 65);
     border-color: rgb(65, 65, 65);
-    color: rgb(65, 65, 65);
+    color: #ECE7E7;
+}
+
+.contact-button:hover{
+    background-color: #d2a937;
+    border-color: #e0ac1c;
+    color: #fff
 }
 
 footer{
@@ -249,6 +258,49 @@ footer{
     .navigation ul li a:hover{
         background: #333;
     }
+
+    .about{
+        background-color: #ECE7E7;
+        color: rgb(65, 65, 65);
+        height: 100vh;
+    }
+    
+    .about-text{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .about-data{
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+    }
+    
+    .about-datam{
+        font-size: 1.10em;
+        padding: 1em;
+    }
+    
+    .about-button{
+        flex-direction: column;
+        margin: 1em;
+    }
+    
+    .button{
+        background-color: rgb(65, 65, 65);
+        border-color: rgb(65, 65, 65);
+        color: #ECE7E7;
+        font-size: 1.15em;
+        width: 220px;
+        height: 55px;
+    }
+    
+    .button:hover{
+        background-color: #d2a937;
+        border-color: #e0ac1c;
+        color: #fff
+    }
 }
 
 /*Section Bread*/
@@ -257,12 +309,9 @@ footer{
     padding: 6rem 0;
 }
 
+
 #bread-section .bread-title-box{
     margin: 0 0 50px;
-}
-#bread-section .title {
-    font-size: 3rem;
-    line-height: 2.5rem;
 }
 
 #bread-section .bread-item {
@@ -369,49 +418,3 @@ img{
 }
 
 /*section about*/
-.about{
-    background-color: #ECE7E7;
-    color: rgb(65, 65, 65);
-    height: 100vh;
-}
-
-.about-text{
-    display: flex;
-    flex-direction: column;
-    font-size: 3.5em;
-    margin: 0.75em;
-}
-
-
-.about-data{
-    display: flex;
-    flex-direction: column;
-    max-width: 550px;
-}
-
-.about-datam{
-    font-size: 1.10em;
-    padding: 1em;
-}
-
-.about-button{
-    flex-direction: column;
-    margin: 1em;
-}
-
-.button{
-    background-color: rgb(65, 65, 65);
-    border-color: rgb(65, 65, 65);
-    color: #ECE7E7;
-    font-size: 1.15em;
-    width: 220px;
-    height: 55px;
-}
-
-.button:hover{
-    background-color: #ECE7E7;
-    border-color: rgb(65, 65, 65);
-    color: rgb(65, 65, 65);
-}
-
-
