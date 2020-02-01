@@ -283,6 +283,10 @@ footer{
     background-color: rgba(0, 0, 0, 0.91);
 }
 
+#bread-section .bread-item .bread-item-box h3, .modal-body h2{
+    font-family: 'Cookie';
+}
+
 #bread-section .bread-item .bread-item-box:hover {
     opacity: 1;
 }
@@ -308,7 +312,11 @@ div.closeButton1 button {
     font-size: xx-large;
 }
 
-div.closeButton2 button:hover, div.closeButton2 button:visited {
+div.closeButton2 button{
+    font-family: 'Cookie';
+}
+
+div.closeButton2 button:hover, div.closeButton2 button:visited, div.closeButton2 button:active {
     color: #fff;
     background-color: #d2a937;
     border-color: #e0ac1c;
@@ -330,6 +338,10 @@ div.modal-body img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+div.modal-body .modal-title {
+    font-family: 'Cookie';
 }
 
 /* section banner*/
