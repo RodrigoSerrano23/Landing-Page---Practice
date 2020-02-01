@@ -52,34 +52,28 @@ p{
     display:none ;
 }
 
-.slider-1{
+.container-section1{
     background: #ECE7E7;
     text-align: center;
     height: 100vh;
-    padding-top: 12rem;
+    padding-top: 6rem;
     font-style: italic;
 }
 
-.slider-1 h1{
+.container-section1 img {
+    width: 250px;
+}
+
+.container-section1 h1{
     font: bold;
     font-size: 50px;
     margin: 0;
 }
 
-.slider-1 h3{
+.container-section1 h3{
     font: normal 36px 'Cookie', cursive;
     margin: 0;
     text-align: center;
-}
-
-img{
-    margin: 0;
-    width: 300px;
-}
-
-.container-img img{
-    width: 200px;
-    margin: 0;
 }
 
 .navigation ul{
@@ -249,6 +243,29 @@ footer{
     .navigation ul li a:hover{
         background: #333;
     }
+
+    .container-section1{
+        background: #ECE7E7;
+        text-align: center;
+        height: 70vh;
+        padding-top: 6rem;
+        font-style: italic;
+    }
+    
+    .container-section1 h1{
+        font: bold;
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .container-section1 h3{
+        font: normal 26px 'Cookie', cursive;
+        margin: 0;
+    }
+    
+    .container-section1 img{
+        width: 150px;  
+    }
 }
 
 /*Section Bread*/
@@ -332,29 +349,6 @@ div.modal-body img {
     object-fit: cover;
 }
 
-/* section banner*/
-.slider-1{
-    background: #ECE7E7;
-    text-align: center;
-    height: 70vh;
-    padding-top: 12rem;
-    font-style: italic;
-}
-
-.slider-1 h1{
-    font: bold;
-    font-size: 40px;
-    margin: 0;
-}
-
-.slider-1 h3{
-    font: normal 26px 'Cookie', cursive;
-    margin: 0;
-}
-
-img{
-    width: 200px;  
-}
 
 /*section about*/
 .about{
